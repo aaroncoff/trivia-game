@@ -1,6 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import routes from './routes';
+import routes2 from './routes2';
+
 
 function App() {
   return (
@@ -10,14 +13,15 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="routes">
+          {routes}
+        </div>
+        <div className="bodyparent">
+          <div className="bodychild">
+            {/* {routes2} */}
+          </div>
+        </div>
+    
       </header>
     </div>
   );
